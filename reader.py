@@ -11,11 +11,12 @@ def load_dir(dir_path = "images/"):
     image_path_list = []
     valid_image_extensions = [".jpg", ".jpeg", ".png", ".bmp"]
     image_list = []
-    
+    label_list = []
     for file in os.listdir(dir_path):
         extension = os.path.splitext(file)[1]
         if extension.lower() not in valid_image_extensions:
             continue
+        label_list.append(file[0])
         image_path_list.append(os.path.join(dir_path, file))
     
     for imagePath in image_path_list:
@@ -25,7 +26,7 @@ def load_dir(dir_path = "images/"):
         else:
             image_list.append(image)
     
-    return image_list
+    return image_list,label_list
 
 
 def load_img(img_path = "images/"):
