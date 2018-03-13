@@ -1,4 +1,5 @@
-import scipy 
+import scipy
+from scipy.signal import medfilt2d
 
 
 def median(img,Ksize=None):
