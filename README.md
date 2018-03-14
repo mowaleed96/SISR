@@ -14,7 +14,7 @@ The training will be done the same way as the [orginal repo](https://github.com/
 
 For testing you will need a vide with `.mp4` extention named `test.mp4`, then type this in the command window:
 
-'''python All.py'''
+```python All.py```
 
 The video will be downscaled then upscaled again and the output video will be named `output.mp4`.
 
