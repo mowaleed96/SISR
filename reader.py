@@ -1,14 +1,12 @@
 import cv2
 import os, os.path
 
-# reference: https://scottontechnology.com/open-multiple-images-opencv-python/
-
 
 def load_dir(dir_path = "images/"): 
     """
         load all images from directory
     """
-    print("-load data")
+    print("-loading images from %s"%(dir_path))
     image_path_list = []
     valid_image_extensions = [".jpg", ".jpeg", ".png", ".bmp"]
     image_list = []
