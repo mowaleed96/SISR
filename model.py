@@ -18,9 +18,9 @@ class denoiser(object):
         self.build_model()
 
     def build_model(self):
-        self.input = tf.placeholder(tf.float32, shape=(4, 1), name='input')
+        self.input = tf.placeholder(tf.float32, shape=(6,1), name='input')
         self.label = tf.placeholder(tf.float32, shape=(3), name='Label')
-        self.w = tf.Variable(tf.random_normal([4, 6], stddev=np.sqrt(2.0 / 4 * 6 / 3)), name='w')
+        self.w = tf.Variable(tf.random_normal([6, 6], stddev=np.sqrt(2.0 / 6 * 6 / 3)), name='w')
         self.pred = self.model()
         return self.output
 
@@ -38,18 +38,24 @@ class denoiser(object):
 
         self.saver = tf.train.Saver()  # To save checkpoint
 
-        tmp_sum = tf.summary.merge_all()
-        tmp_sum_wrt = tf.summary.FileWriter("logs", self.sess.graph)
+        _ = tf.summary.merge_all()
+        _ = tf.summary.FileWriter("logs", self.sess.graph)
         return self.output
 
     def train(self, config):
+
+        print ("loading images from %s..."%(config.path))
         images, labels = load_dir(config.path)
+
+        
         if (config.isGrayScale != "True" and config.isGrayScale != "true"):
+            print ("converting to gray scale...")
             for i in range(0, len(images)):
                 images[i] = cv2.cvtColor(images[i], cv2.COLOR_RGB2GRAY)
-        print("--finished loading data")
+        
+        print("extracting features...")
         list_features = self.get_features(images)
-        print("----got features")
+        
         self.train_op = tf.train.AdamOptimizer(learning_rate=config.learning_rate).minimize(self.loss)
         tf.initialize_all_variables().run()
         time_ = time.time()
@@ -57,7 +63,7 @@ class denoiser(object):
         self.load(config.checkpoint_dir)
 
         if config.is_train=="True":
-            print("starting training")
+            print("starting training...")
             for ep in range(0, config.epoch):
                 for i in range(0, len(list_features)):
                     #print(list_features[i])
@@ -95,33 +101,33 @@ class denoiser(object):
             print("Accuracy = {}".format(accuracy/float(len(list_features))))
 
     def get_features(self, images):
-        print("---get features")
+        
         list_features = []
+        cnt = 1
         for image in images:
-            Ywiener = wiener(image)
-            Ymedian = median(image)
-            # Yhomomorphic=homomorphic(image)
+            print "img-%d"%cnt
+            cnt = cnt + 1
+            print ("\tappling wiener filter")
+            Ywiener = wienerf(image)
+            print ("\tappling median filter")
+            Ymedian = medianf(image)
+            print ("\tappling homomorphic filter")
+            Yhomomorphic=homomorphicf(image)
+            print "\n...\n...\n..."
             Wwiener = np.subtract(image, Ywiener)
             Wmedian = np.subtract(image, Ymedian)
-            # Whomomorphic = np.subtract(image, Yhomomorphic)
-            features = []
-
+            Whomomorphic = np.subtract(image, Yhomomorphic)
+            
+            print "\n...\n"
+            
             skew1,kurt1=extract(Wwiener)
-            features.append([skew1])
-            features.append([kurt1])
 
             skew2, kurt2=extract(Wmedian)
-            features.append([skew2])
-            features.append([kurt2])
 
-            """
             skew3, kurt3=extract(Whomomorphic)
-            features.append([skew3])
-            features.append([kurt3])
-            """
-
-            list_features.append(features)
-
+            
+            list_features.append([[skew1],[kurt1],[skew2],[kurt2],[skew3],[kurt3]])
+            
         return list_features
 
     def save(self, checkpoint_dir, step):
@@ -152,4 +158,4 @@ class denoiser(object):
             self.saver.restore(self.sess, os.path.join(os.getcwd(), ckpt_path))
             print("\n Checkpoint Loading Success! %s\n\n" % ckpt_path)
         else:
-            print("\n! Checkpoint Loading Failed \n\n")
+            print("\n!*Checkpoint Loading Failed*!\n\n")
