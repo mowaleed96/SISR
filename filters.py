@@ -1,16 +1,17 @@
 import scipy
 import numpy as np
+from scipy.signal import medfilt2d
 
 
-def median(img,Ksize=None):
+def medianf(img,Ksize=None):
     med_img = scipy.signal.medfilt2d(img,Ksize)
     return med_img
 
-def wiener(img,Ksize=None):
+def wienerf(img,Ksize=None):
     win_img = scipy.signal.wiener(img,Ksize)
     return win_img
 
-def homomorphic(img):
+def homomorphicf(img):
     
     #ref code can be found here 
     # : https://stackoverflow.com/questions/24731810/segmenting-license-plate-characters
