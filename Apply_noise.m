@@ -1,34 +1,22 @@
-function  = Apply_Noise( input_dir, output_dir )
-%APPLYNOISE Summary of this function goes here
-%   applys noise to images in input dir to output dir
-%   the output images' name will be in the format label_name.png
-%   labels are
-%   0 --> salt and pepper
-%   1 --> gaussian
-%   2 --> speckle
-%   3 --> non-gaussian (not implemented yet
+images_dir='Camera Roll\';
+images_ext='*.jpg';
+images=dir(fullfile(images_dir,images_ext));
 
+mkdir('Salt & pepper noise')
+mkdir('Gaussian noise')
+mkdir('Non-Gaussian noise')
+mkdir('Speckle noise')
 
-%% start the code
-images_dir=input_dir;
-    out_dir=output_dir;
-    images_ext='*.png';
-    images=dir(fullfile(images_dir,images_ext));
+for im = images'
 
-    mkdir(output_dir)
-    
-    for im = images'
-        image=imread(strcat(images_dir,'\',im.name));
-        %imshow(image);
+    image=imread(strcat(images_dir,im.name));
+    imshow(image);
         
-        imsalt=imnoise(image,'salt & pepper');
-        imgaus=imnoise(image,'gaussian');
-        imspec=imnoise(image,'speckle');
+    imsalt=imnoise(image,'salt & pepper');
+    imgaus=imnoise(image,'gaussian');
+    imspec=imnoise(image,'speckle');
     
-        imwrite(imsalt,strcat(out_dir,'\0_',im.name));
-        imwrite(imgaus,strcat(out_dir,'\1_',im.name));
-        imwrite(imspec,strcat(out_dir,'\2_',im.name));
-    end
-
+    imwrite(imsalt,strcat('Salt & pepper noise\',im.name));
+    imwrite(imsalt,strcat('gaussian noise\',im.name));
+    imwrite(imsalt,strcat('Speckle noise\',im.name));
 end
-
