@@ -5,8 +5,14 @@ def extract(img):
     """
         extract skewness and kurtosis for an image 
     """
+    w, h, _ = img.shape
+    imgsize = w*h
 
     skew = scipy.stats.skew(img)
-    kurt = scipy.stats.kurtosis(img)
+    skew = np.sum(skew)/imgsize
 
-    return np.sum(skew)/float(len(skew)), np.sum(kurt)/float(len(kurt))
+
+    kurt = scipy.stats.kurtosis(img)
+    kurt = np.sum(kurt)/imgsize
+
+    return skew, kurt
