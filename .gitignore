@@ -111,3 +111,9 @@ venv.bak/
 #training files
 logs/
 checkpoint/
+
+#testing output files
+Test/
+
+#matlab
+*.asv
