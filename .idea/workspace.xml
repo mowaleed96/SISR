@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d937f194-c606-4f5c-af8a-43b1c7958f23" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Apply_noise.m" afterPath="$PROJECT_DIR$/Apply_noise.m" />
-      <change beforePath="$PROJECT_DIR$/MBHTM.m" afterPath="$PROJECT_DIR$/MBHTM.m" />
-      <change beforePath="$PROJECT_DIR$/Training/0_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Training/0_4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Training/1_2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Training/1_3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Training/2_5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Training/2_6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/model.py" afterPath="$PROJECT_DIR$/model.py" />
-    </list>
+    <list default="true" id="d937f194-c606-4f5c-af8a-43b1c7958f23" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +36,7 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="2898">
               <caret line="161" column="53" lean-forward="false" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="53" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -666,7 +654,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="2898">
           <caret line="161" column="53" lean-forward="false" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="53" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />

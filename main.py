@@ -2,7 +2,7 @@ import tensorflow as tf
 from  model import denoiser
 flags = tf.app.flags
 FLAGS = flags.FLAGS
-flags.DEFINE_integer("epoch", 10000, "Number of epoch")
+flags.DEFINE_integer("epoch", 100000, "Number of epoch")
 flags.DEFINE_integer("isGrayScale", 1, "is input gray scale or no")
 flags.DEFINE_string("is_train", "True", "if the train")
 flags.DEFINE_string("checkpoint_dir", "checkpoint", "Name of checkpoint directory")
