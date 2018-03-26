@@ -2,79 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d937f194-c606-4f5c-af8a-43b1c7958f23" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/SISR.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Training/0_1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Training/0_4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Training/1_2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Training/1_3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Training/2_5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Training/2_6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/checkpoint" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-1500.data-00000-of-00001" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-1500.index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-1500.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-3000.data-00000-of-00001" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-3000.index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-3000.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-4500.data-00000-of-00001" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-4500.index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-4500.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-51000.data-00000-of-00001" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-51000.index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-51000.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-52500.data-00000-of-00001" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-52500.index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-52500.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-54000.data-00000-of-00001" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-54000.index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-54000.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-55500.data-00000-of-00001" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-55500.index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-55500.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-57000.data-00000-of-00001" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-57000.index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/checkpoint/train/noise-preprocess.model-57000.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972573.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972625.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972663.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972710.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972789.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972829.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972887.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972906.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972924.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972937.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972955.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972984.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520972999.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973018.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973031.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973047.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973061.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973074.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973096.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973127.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973185.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973248.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973340.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973358.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973389.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973429.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973476.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973486.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973500.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973535.mustafa-Inspiron-5537" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1520973545.mustafa-Inspiron-5537" />
-      <change beforePath="$PROJECT_DIR$/features.py" afterPath="$PROJECT_DIR$/features.py" />
-      <change beforePath="$PROJECT_DIR$/filters.py" afterPath="$PROJECT_DIR$/filters.py" />
-      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Apply_noise.m" afterPath="$PROJECT_DIR$/Apply_noise.m" />
+      <change beforePath="$PROJECT_DIR$/MBHTM.m" afterPath="$PROJECT_DIR$/MBHTM.m" />
+      <change beforePath="$PROJECT_DIR$/Training/0_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Training/0_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Training/1_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Training/1_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Training/2_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Training/2_6.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/model.py" afterPath="$PROJECT_DIR$/model.py" />
-      <change beforePath="$PROJECT_DIR$/reader.py" afterPath="$PROJECT_DIR$/reader.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,20 +26,8 @@
       <file leaf-file-name="filters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Apply_noise.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apply_noise.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="54">
+              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -110,8 +36,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="337">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -122,13 +48,10 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+            <state relative-caret-position="165">
+              <caret line="161" column="53" lean-forward="false" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="53" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#702#1373#0" expanded="false" />
-                <element signature="e#4722#5137#0" expanded="false" />
-                <element signature="e#5183#5828#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -137,10 +60,11 @@
       <file leaf-file-name="reader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="110">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
               </folding>
             </state>
           </provider>
@@ -152,6 +76,7 @@
     <findStrings>
       <find>config.batch_size</find>
       <find>config.path</find>
+      <find>here is nan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,10 +85,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/filters.py" />
         <option value="$PROJECT_DIR$/reader.py" />
-        <option value="$PROJECT_DIR$/features.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/features.py" />
+        <option value="$PROJECT_DIR$/filters.py" />
         <option value="$PROJECT_DIR$/model.py" />
       </list>
     </option>
@@ -177,7 +102,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="650" />
+    <option name="width" value="1299" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectView">
@@ -195,6 +120,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,14 +132,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Moon/moon" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -294,18 +219,18 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="274" height="543" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18834797" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="274" height="543" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42156863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25778133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16919394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -328,13 +253,254 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="71" column="29" lean-forward="true" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apply_noise.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apply_noise.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apply_noise.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apply_noise.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="100" column="50" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apply_noise.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/features.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -342,9 +508,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -362,9 +526,6 @@
           <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#702#1373#0" expanded="false" />
-            <element signature="e#4722#5137#0" expanded="false" />
-            <element signature="e#5183#5828#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -375,6 +536,7 @@
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
           </folding>
         </state>
       </provider>
@@ -393,9 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -403,9 +562,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -425,9 +582,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#702#1373#0" expanded="false" />
-            <element signature="e#4722#5137#0" expanded="false" />
-            <element signature="e#5183#5828#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -436,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -446,6 +599,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
           </folding>
         </state>
       </provider>
@@ -454,67 +608,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apply_noise.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="71" lean-forward="false" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="337">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1521049716532" expanded="true" signature="806:811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MBHTM.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apply_noise.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        <state relative-caret-position="165">
+          <caret line="161" column="53" lean-forward="false" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="53" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#702#1373#0" expanded="false" />
-            <element signature="e#4722#5137#0" expanded="false" />
-            <element signature="e#5183#5828#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -11,7 +11,7 @@ function  Apply_Noise( input_dir, output_dir )
 %% start the code
 images_dir=input_dir;
     out_dir=output_dir;
-    images_ext='*.png';
+    images_ext='*.jpg';
     images=dir(fullfile(images_dir,images_ext));
 
     mkdir(output_dir)
