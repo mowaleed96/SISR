@@ -1,5 +1,3 @@
-# this is a tmp readme and needs update
-
 # Implement ESCPN with Tensorflow
 
 ![Imgur](https://i.imgur.com/T1ZXLM0.png)
@@ -9,7 +7,6 @@
 * Tensorflow
 * Opencv
 * h5py
-*
 
 
 

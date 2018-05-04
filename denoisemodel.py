@@ -6,6 +6,10 @@ from features import *
 import time
 import copy
 
+def checkimage(image):
+    cv2.imshow("test", image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 
 class denoiser(object):
@@ -51,7 +55,7 @@ class denoiser(object):
 
         print ("loading images from %s..." % (config.path))
         images, labels, _NameImage = load_dir(config.path)
-        coloredImages=copy.deepcopy(images)
+        coloredImages = copy.deepcopy(images)
         if (config.notGrayScale == 1):
             print ("converting to gray scale...")
             for i in range(0, len(images)):
@@ -89,8 +93,8 @@ class denoiser(object):
                         self.save(config.checkpoint_dir, counter)
         else:
             accuracy = 0
-            forEachClass=[0,0,0,0,0]
-            totalEachClass=[0,0,0,0,0]
+            forEachClass = [0, 0, 0, 0, 0]
+            totalEachClass = [0, 0, 0, 0, 0]
             for i in range(0, len(list_features)):
                 results = self.pred.eval({self.input: np.array(list_features[i])})
                 maxx = 0
@@ -100,16 +104,17 @@ class denoiser(object):
                         maxx = results[j]
                         index = j
 
-                if(labels[i]==index):
-                    forEachClass[index]+=1
+                if (labels[i] == index):
+                    forEachClass[index] += 1
 
-                totalEachClass[labels[i]]+=1
-                self.applyFilterAndSaveImage(index, images[i], _NameImage[i])
+                totalEachClass[labels[i]] += 1
+                self.applyFilterAndSaveImage(index, coloredImages[i], _NameImage[i])
                 print("input = {} and result = {}".format(labels[i], index))
                 if index == labels[i]:
                     accuracy += 1
 
-            print("Correct For Each Class ={} \n and expact total for each class = {}".format(forEachClass,totalEachClass))
+            print("Correct For Each Class ={} \n and expact total for each class = {}".format(forEachClass,
+                                                                                              totalEachClass))
             print("Accuracy = {}".format(accuracy / float(len(list_features))))
 
     def get_features(self, images):
@@ -143,21 +148,26 @@ class denoiser(object):
 
         return list_features
 
-
-    def applyFilterAndSaveImage(self,label,image,name):
-        write_img(image,name,1,str(label));
-        if label==0 :
-            output = medianf(image)
-        elif label==1 or label == 3:
-            output = wienerf(image)
+    def applyFilterAndSaveImage(self, label, image, name):
+        #write_img(image, name, 1, str(label));
+        if label == 0:
+            tr, tg, tb = cv2.split(image)
+            output_r = medianf(tr)
+            output_g = medianf(tg)
+            output_b = medianf(tb)
+            output = cv2.merge((output_r, output_g, output_b))
+        elif label == 1 or label == 3:
+            tr, tg, tb = cv2.split(image)
+            output_r = wienerf(tr)
+            output_g = wienerf(tg)
+            output_b = wienerf(tb)
+            output = cv2.merge((output_r, output_g, output_b))
         elif label == 2:
-            output = homomorphicf(image)
+            output = homomorphicf_RGB(image)
         else:
-            output=image
+            output = image
 
-        write_img(output,name,0,str(label));
-
-
+        write_img(output, name, 0, str(label))
 
     def save(self, checkpoint_dir, step):
         """
