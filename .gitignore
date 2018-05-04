@@ -1,0 +1,10 @@
+*.pyc
+*.vscode
+*.swp
+*.__pycache__
+checkpoint
+checkpoint-faces
+denoise checkpoint
+Test
+Train
+Train faces
