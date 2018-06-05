@@ -203,13 +203,7 @@ def face_detect(image):
     cascPath = "haarcascade_frontalface_default.xml"
     faceCascade = cv2.CascadeClassifier(cascPath)
 
-    faces = faceCascade.detectMultiScale(
-        gray,
-        scaleFactor=1.1,
-        minNeighbors=5,
-        # minSize=(30, 30)#,
-        # flags=cv2.cv.CV_HAAR_SCALE_IMAGE
-    )
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
     return len(faces) > 0
 
