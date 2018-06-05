@@ -197,14 +197,12 @@ def make_data_hf(input_, label_, config):
         hf.create_dataset('input', data=input_)
         hf.create_dataset('label', data=label_)
 
-
 def face_detect(image):
     gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
     cascPath = "haarcascade_frontalface_default.xml"
-    faceCascade = cv2.CascadeClassifier(cascPath)
+    face_cascade = cv2.CascadeClassifier(cascPath)
 
-    faces = face_Cascade.detectMultiScale(gray, 1.3, 5)
-
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     return len(faces) > 0
 
 
@@ -220,10 +218,11 @@ def input_setup(config):
     sub_input_sequence, sub_label_sequence = make_sub_data(data, config)
     if not config.is_train:
         tmpp = prepare_data(dataset="Test")
-        tmpimg = imread(tmpp[0])
+        tmpimg = imread(config.test_img)
         print (str(face_detect(tmpimg)))
         if face_detect(tmpimg):
             config.checkpoint_dir += '-faces'
+            config.is_face = True
 
     # Make list to numpy array. With this transform
     arrinput = np.asarray(sub_input_sequence)  # [?, 17, 17, 3]

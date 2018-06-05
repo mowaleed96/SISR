@@ -168,6 +168,7 @@ class ESPCN(object):
         else:
             print("Now Start Testing...")
             result = self.pred.eval({self.images: input_[0].reshape(1, self.h, self.w, self.c_dim)})
+
             x = np.squeeze(result)
             checkimage(x)
             print(x.shape)
