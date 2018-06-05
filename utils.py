@@ -203,7 +203,7 @@ def face_detect(image):
     cascPath = "haarcascade_frontalface_default.xml"
     faceCascade = cv2.CascadeClassifier(cascPath)
 
-    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+    faces = face_Cascade.detectMultiScale(gray, 1.3, 5)
 
     return len(faces) > 0
 
