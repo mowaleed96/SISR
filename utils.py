@@ -226,7 +226,7 @@ def input_setup(config):
     sub_input_sequence, sub_label_sequence = make_sub_data(data, config)
     if not config.is_train:
         tmpp = prepare_data(dataset="Test")
-        tmpimg = imread(tmpp[0])
+        tmpimg = imread(config.test_img)
         print (str(face_detect(tmpimg)))
         if face_detect(tmpimg):
             config.checkpoint_dir += '-faces'
