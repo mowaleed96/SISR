@@ -9,8 +9,8 @@ def split():
     fps = cap.get(cv2.CAP_PROP_FPS)
     print (str(fps))
     try:
-        if not os.path.exists('old frames'):
-            os.makedirs('old frames')
+        if not os.path.exists('old-frames'):
+            os.makedirs('old-frames')
     except OSError:
         print ('Error: Creating directory of data')
     length = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
@@ -20,7 +20,7 @@ def split():
         ret, frame = cap.read()
 
         # Saves image of the current frame in jpg file
-        name = './old frames/' + str(currentFrame) + '.jpg'
+        name = './old-frames/' + str(currentFrame) + '.jpg'
         print ('Creating...' + name)
         cv2.imwrite(name, frame)
 

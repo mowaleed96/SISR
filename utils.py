@@ -1,41 +1,45 @@
 import cv2
 import numpy as np
 import tensorflow as tf
-import os 
+import os
 import glob
 import h5py
 
 
-
 # Get the Image
+
+
 def imread(path):
     img = cv2.imread(path)
     return img
 
+
 def imsave(image, path, config):
-    #checkimage(image)
+    # checkimage(image)
     # Check the check dir, if not, create one
 
-    if not os.path.isdir(os.path.join(os.getcwd(),config.result_dir)):
-        os.makedirs(os.path.join(os.getcwd(),config.result_dir))
+    if not os.path.isdir(os.path.join(os.getcwd(), config.result_dir)):
+        os.makedirs(os.path.join(os.getcwd(), config.result_dir))
     # NOTE: because normial, we need mutlify 255 back
-    cv2.imwrite(os.path.join(os.getcwd(),path),image * 255.)
+    cv2.imwrite(os.path.join(os.getcwd(), path), image * 255.)
+
 
 def checkimage(image):
-    cv2.imshow("test",image)
+    cv2.imshow("test", image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-def modcrop(img, scale =3):
+
+def modcrop(img, scale=3):
     """
         To scale down and up the original image, first thing to do is to have no remainder while scaling operation.
     """
     # Check the image is grayscale
-    if len(img.shape) ==3:
+    if len(img.shape) == 3:
         h, w, _ = img.shape
         h = (h / scale) * scale
         w = (w / scale) * scale
-        #print(str(h)+' '+str(w))
+        # print(str(h)+' '+str(w))
         img = img[0:h, 0:w, :]
     else:
         h, w = img.shape
@@ -44,58 +48,66 @@ def modcrop(img, scale =3):
         img = img[0:h, 0:w]
     return img
 
+
 def checkpoint_dir(config):
     if config.is_train:
         return os.path.join('./{}'.format(config.checkpoint_dir), "train.h5")
     else:
         return os.path.join('./{}'.format(config.checkpoint_dir), "test.h5")
 
-def preprocess(path ,scale = 3):
+
+def preprocess(path, scale=3):
     """
         Args:
             path: the image directory path
             scale: the image need to scale 
     """
-    print("preprocess is here plz .-.")
     img = imread(path)
 
     label_ = modcrop(img, scale)
-    
-    input_ = cv2.resize(label_,None,fx = 1.0/scale ,fy = 1.0/scale, interpolation = cv2.INTER_CUBIC) # Resize by scaling factor
+
+    input_ = cv2.resize(label_, None, fx=1.0 / scale, fy=1.0 / scale,
+                        interpolation=cv2.INTER_CUBIC)  # Resize by scaling factor
 
     kernel_size = (7, 7);
     sigma = 3.0;
-    #input_ = cv2.GaussianBlur(input_, kernel_size, sigma);
-    #checkimage(input_)
+    # input_ = cv2.GaussianBlur(input_, kernel_size, sigma);
+    # checkimage(input_)
 
     return input_, label_
 
-def prepare_data(dataset = "Train",Input_img = ""):
+
+def prepare_data(dataset="Train", Input_img=""):
     """
         Args:
             dataset: choose train dataset or test dataset
             For train dataset, output data would be ['.../t1.bmp', '.../t2.bmp',..., 't99.bmp']
     """
-    if dataset == "Train":
-        data_dir = os.path.join(os.getcwd(), dataset) # Join the Train dir to current directory
-        data = glob.glob(os.path.join(data_dir, "*.bmp")) # make set of all dataset file path
+    if dataset == "Train" or dataset == "Train faces":
+        data_dir = os.path.join(os.getcwd(), dataset)  # Join the Train dir to current directory
+        data = glob.glob(os.path.join(data_dir, "*.bmp"))  # make set of all dataset file path
     else:
-        if Input_img !="":
-            data = [os.path.join(os.getcwd(),Input_img)]
+        if Input_img != "":
+            data = [os.path.join(os.getcwd(), Input_img)]
         else:
             data_dir = os.path.join(os.path.join(os.getcwd(), dataset), "Set5")
-            data = glob.glob(os.path.join(data_dir, "*.bmp")) # make set of all dataset file path
+            data = glob.glob(os.path.join(data_dir, "*.bmp"))  # make set of all dataset file path
     print(data)
     return data
 
-def load_data(is_train, test_img):
+
+def load_data(is_train, test_img, is_face):
+    print "the is_face flag is " + str(is_face)
     if is_train:
+        if is_face:
+            return prepare_data(dataset="Train faces")
         data = prepare_data(dataset="Train")
     else:
         if test_img != "":
-            return prepare_data(dataset="Test",Input_img=test_img)
+            return prepare_data(dataset="Test", Input_img=test_img)
         data = prepare_data(dataset="Test")
     return data
+
 
 def make_sub_data(data, config):
     """
@@ -107,12 +119,12 @@ def make_sub_data(data, config):
     sub_input_sequence = []
     sub_label_sequence = []
     for i in range(len(data)):
-        input_, label_, = preprocess(data[i], config.scale) # do bicbuic
-        if len(input_.shape) == 3: # is color
+        input_, label_, = preprocess(data[i], config.scale)  # do bicbuic
+        if len(input_.shape) == 3:  # is color
             h, w, c = input_.shape
         else:
-            h, w = input_.shape # is grayscale
-        
+            h, w = input_.shape  # is grayscale
+
         if not config.is_train:
             input_ = imread(data[i])
             input_ = input_ / 255.0
@@ -124,9 +136,7 @@ def make_sub_data(data, config):
         # Input 
         for x in range(0, h - config.image_size + 1, config.stride):
             for y in range(0, w - config.image_size + 1, config.stride):
-
-                sub_input = input_[x: x + config.image_size, y: y + config.image_size] # 17 * 17
-
+                sub_input = input_[x: x + config.image_size, y: y + config.image_size]  # 17 * 17
 
                 # Reshape the subinput and sublabel
                 sub_input = sub_input.reshape([config.image_size, config.image_size, config.c_dim])
@@ -140,10 +150,12 @@ def make_sub_data(data, config):
         # Label (the time of scale)
         for x in range(0, h * config.scale - config.image_size * config.scale + 1, config.stride * config.scale):
             for y in range(0, w * config.scale - config.image_size * config.scale + 1, config.stride * config.scale):
-                sub_label = label_[x: x + config.image_size * config.scale, y: y + config.image_size * config.scale] # 17r * 17r
-                
+                sub_label = label_[x: x + config.image_size * config.scale,
+                            y: y + config.image_size * config.scale]  # 17r * 17r
+
                 # Reshape the subinput and sublabel
-                sub_label = sub_label.reshape([config.image_size * config.scale, config.image_size * config.scale, config.c_dim])
+                sub_label = sub_label.reshape(
+                    [config.image_size * config.scale, config.image_size * config.scale, config.c_dim])
                 # Normialize
                 sub_label = sub_label / 255.0
                 # Add to sequence
@@ -166,14 +178,15 @@ def read_data(path):
         label_ = np.array(hf.get('label'))
         return input_, label_
 
+
 def make_data_hf(input_, label_, config):
     """
         Make input data as h5 file format
         Depending on "is_train" (flag value), savepath would be change.
     """
     # Check the check dir, if not, create one
-    if not os.path.isdir(os.path.join(os.getcwd(),config.checkpoint_dir)):
-        os.makedirs(os.path.join(os.getcwd(),config.checkpoint_dir))
+    if not os.path.isdir(os.path.join(os.getcwd(), config.checkpoint_dir)):
+        os.makedirs(os.path.join(os.getcwd(), config.checkpoint_dir))
 
     if config.is_train:
         savepath = os.path.join(os.getcwd(), config.checkpoint_dir + '/train.h5')
@@ -184,23 +197,43 @@ def make_data_hf(input_, label_, config):
         hf.create_dataset('input', data=input_)
         hf.create_dataset('label', data=label_)
 
+
+def face_detect(image):
+    gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    cascPath = "haarcascade_frontalface_default.xml"
+    faceCascade = cv2.CascadeClassifier(cascPath)
+
+    faces = faceCascade.detectMultiScale(
+        gray,
+        scaleFactor=1.1,
+        minNeighbors=5,
+        # minSize=(30, 30)#,
+        # flags=cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+
+    return len(faces) > 0
+
+
 def input_setup(config):
     """
         Read image files and make their sub-images and saved them as a h5 file format
     """
 
     # Load data path, if is_train False, get test data
-    data = load_data(config.is_train, config.test_img)
-
+    data = load_data(config.is_train, config.test_img, config.is_face)
 
     # Make sub_input and sub_label, if is_train false more return nx, ny
     sub_input_sequence, sub_label_sequence = make_sub_data(data, config)
-
+    if not config.is_train:
+        tmpp = prepare_data(dataset="Test")
+        tmpimg = imread(tmpp[0])
+        print (str(face_detect(tmpimg)))
+        if face_detect(tmpimg):
+            config.checkpoint_dir += '-faces'
 
     # Make list to numpy array. With this transform
-    arrinput = np.asarray(sub_input_sequence) # [?, 17, 17, 3]
-    arrlabel = np.asarray(sub_label_sequence) # [?, 17 * scale , 17 * scale, 3]
-    
+    arrinput = np.asarray(sub_input_sequence)  # [?, 17, 17, 3]
+    arrlabel = np.asarray(sub_label_sequence)  # [?, 17 * scale , 17 * scale, 3]
+
     print(arrinput.shape)
     make_data_hf(arrinput, arrlabel, config)
-

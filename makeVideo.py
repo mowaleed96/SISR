@@ -26,7 +26,7 @@ def make(fps):
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument("-e", "--extension", required=False, default='png', help="Extension name. default is 'png'.")
     arg_parser.add_argument("-o", "--output", required=False, default='output.mp4', help="Output video file.")
-    arg_parser.add_argument("-d", "--directory", required=False, default='new frames', help="Specify image directory.")
+    arg_parser.add_argument("-d", "--directory", required=False, default='new-frames', help="Specify image directory.")
     arg_parser.add_argument("-fps", "--framerate", required=False, default=str(fps), help="Set the video framerate.")
     arg_parser.add_argument("-s", "--sort", required=False, default='numeric',
                             help="Determines the type of file-order sort that will be used.")
